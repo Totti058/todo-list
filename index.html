@@ -4,19 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo list</title>
+    <link rel="stylesheet" href="stylos.css"
 </head>
 <body>
     <main>
         <section>
             <div class="form"
-            <form>
-                
+            <form id="form-alumnos">
+
+                <h2>Agregar Alumno</h2>
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" min="1" max="100" required>
+
+                <label for="curso">Curso</label>
+                <input type="text" id="curso" name="curso" placeholder="Ej: 10°A" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+
+                <button type="submit">Agregar Alumno</button>
             </form>
 
             </div>
         </section>
         <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Curso</th>
+                        <th>Email</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
 
+                <tbody id="tabla-alumnos">
+
+                </tbody>
+            </table>
         </section>
     </main>
 </body>
